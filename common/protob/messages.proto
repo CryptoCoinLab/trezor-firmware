@@ -161,12 +161,6 @@ enum MessageType {
     MessageType_StellarBumpSequenceOp = 221 [(wire_in) = true];
     MessageType_StellarSignedTx = 230 [(wire_out) = true];
 
-    // TRON
-    MessageType_TronGetAddress = 250 [(wire_in) = true];
-    MessageType_TronAddress = 251 [(wire_out) = true];
-    MessageType_TronSignTx = 252 [(wire_in) = true];
-    MessageType_TronSignedTx = 253 [(wire_out) = true];
-
     // Cardano
     // dropped Sign/VerifyMessage ids 300-302
     MessageType_CardanoSignTx = 303 [(wire_in) = true];
@@ -177,20 +171,6 @@ enum MessageType {
     MessageType_CardanoAddress = 308 [(wire_out) = true];
     MessageType_CardanoTxAck = 309 [(wire_in) = true];
     MessageType_CardanoSignedTx = 310 [(wire_out) = true];
-
-    // Ontology
-    MessageType_OntologyGetAddress = 350 [(wire_in) = true];
-    MessageType_OntologyAddress = 351 [(wire_out) = true];
-    MessageType_OntologyGetPublicKey = 352 [(wire_in) = true];
-    MessageType_OntologyPublicKey = 353 [(wire_out) = true];
-    MessageType_OntologySignTransfer = 354 [(wire_in) = true];
-    MessageType_OntologySignedTransfer = 355 [(wire_out) = true];
-    MessageType_OntologySignWithdrawOng = 356 [(wire_in) = true];
-    MessageType_OntologySignedWithdrawOng = 357 [(wire_out) = true];
-    MessageType_OntologySignOntIdRegister = 358 [(wire_in) = true];
-    MessageType_OntologySignedOntIdRegister = 359 [(wire_out) = true];
-    MessageType_OntologySignOntIdAddAttributes = 360 [(wire_in) = true];
-    MessageType_OntologySignedOntIdAddAttributes = 361 [(wire_out) = true];
 
     // Ripple
     MessageType_RippleGetAddress = 400 [(wire_in) = true];
